@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget id="mxtechies.reactfab.ReactFab" pluginWidget="true" needsEntityContext="true" offlineCapable="true" supportedPlatform="Web"
+    xmlns="http://www.mendix.com/widget/1.0/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd">
+    <name>React FAB</name>
+    <description>React floating action buttons</description>
+    <icon>iVBORw0KGgoAAAANSUhEUgAAAD8AAAA/CAYAAABXXxDfAAAACXBIWXMAAC4jAAAuIwF4pT92AAADBklEQVRoge1a3XHaQBDey/AOHXAdQAfBFcSpAPKumcgVGDrQg97BFZhUEKggpoKIDnAFyizZc1brk3S2GSLY+2Y8I+v2fr717e53Z5myLEErPqllHskrRiSvFZG8VkTyWhHJa0UkrxWRvFaoJt8LNTQ2GQDAuMHkUBb502mWdR4E3eQQ8Q0AjFpMv5VFvroU8qHbfhVAHLE0NmnaHZ3Ccdsbm6QAMBALw22c0bNsa8JbbP8resYmSPC7bxHGJrYs8vRSyLwVvZYk9u4tbGzSxWvhPQCkZZGvQWGpGwLAo7HJDBTX+QwrmFbyfQxp9QoPa/hnT9szJgd6Tknk9FvGeyiLfMN+31I/xATLJwDMnRLEagIAGH/3zD5zCYnE1S32oXh12NO6gY3t47Bgz5i8v/DG4P/VkXi5bTB50QVk+wsnL4t8Dv/KZlEzNi5+4mw97T6F+VU4qRB/HD43tj8JB968Ik+GdbV9HaLfjU3W5OWFJOTOCGKHyP5jcmbB3uEu+c3MnslhbhehA39S264s8jHru/HsjCr5AA0vJ8QJMmFjmYcr5KnELH1jMYIb1h/DaMbacatP2Vw7GuNA7RmF0dg5zthkzsKqQl4mvLRFw/cF2QF5lP8MfR2J2JK9wrHWwiwT/afGJjzUZNiM+HpIjc4Y8UkN8SPOme2t5510lO9c0KYyp060wF8H8DwgnVvBtZS6pefdqq06XQv5heedt3JwXAP5rUiqx9ChRHrX1PHSye+59qBs/1JCSXc81HWW5A8BE4bYnAu3rMxN6F5iROXNIaWS2Ey+zVM0yKyh/Zy4Y3pDZvZ7cgaQc2akKyp4dXtLoqIrBOvwg12xQU1mX6EIQ/LoJLqqq1SFD32HJySlD3smTAY1AmrLnsceEnwMpx53Ivx8hxrZV45/E3xv/04M6xRfwMIdfGOE3CRD2/wf/gLT2OQQcNTtGjD+7SlKXdfzgw+o/w8n+faWTndpjX7vEqqXKfHDY6WI5LUikteKSF4rInmtiOS1IpLXikheKyJ5lQCAP7wxHk2UDwr3AAAAAElFTkSuQmCC</icon>
+    <properties>
+        <propertyGroup caption="General">
+            <property key="mainIcon" type="icon">
+                <caption>Main Icon</caption>
+                <description>Main button icon</description>
+            </property>
+            <property key="mainIconText" type="string" required="false">
+                <caption>Main Icon Text</caption>
+                <description>Text to be displayed on interaction with main icon</description>
+            </property>
+            <property key="event" type="enumeration" defaultValue="hover">
+                <caption>Event</caption>
+                <description>Event type to display the action buttons</description>
+                <enumerationValues>
+                    <enumerationValue key="hover">Hover</enumerationValue>
+                    <enumerationValue key="click">Click</enumerationValue>
+                </enumerationValues>
+            </property>
+            <property key="object" type="object" isList="true">
+                <caption>Action Button List</caption>
+                <description/>
+                <properties>
+                    <propertyGroup caption="Action Button">
+                        <property key="iconText" type="string">
+                            <caption>Icon Text</caption>
+                            <description>Text to be displayed on interaction with action icon</description>
+                        </property>
+                        <property key="buttonIcon" type="icon">
+                            <caption>Icon</caption>
+                            <description>Action button icon</description>
+                        </property>
+                        <property key="objectAction" type="action">
+                            <caption>Action</caption>
+                            <description>Action to be triggered on click of action button</description>
+                        </property>
+                    </propertyGroup>
+                </properties>
+            </property>
+        </propertyGroup>
+        <propertyGroup caption="Styles">
+            <property key="mainBg" type="string">
+                <caption>Main Icon BG</caption>
+                <description>Background color of the main icon in Hex code (#E74C3C)</description>
+            </property>
+            <property key="mainColor" type="string">
+                <caption>Main Icon Color</caption>
+                <description>Color of the main icon in Hex code (#FFFFFF)</description>
+            </property>
+            <property key="actionBg" type="string">
+                <caption>Action Icons BG</caption>
+                <description>Background color of the action icons in Hex code (#3498DB)</description>
+            </property>
+            <property key="actionColor" type="string">
+                <caption>Action Icons Color</caption>
+                <description>Color of the action icons in Hex code (#FFFFFF)</description>
+            </property>
+        </propertyGroup>
+    </properties>
+</widget>
